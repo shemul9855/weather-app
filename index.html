@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="weather-app">
+
+        <h1>🌤️ Weather App</h1>
+        <p class="subtitle">Check the weather in your city</p>
+
+        <!-- City Search -->
+        <form id="search-form">
+            <input
+                type="text"
+                id="city-input"
+                placeholder="Enter city name..."
+                aria-label="City name"
+                required
+            >
+
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Status Message -->
+        <p id="message">Enter a city name to see the weather.</p>
+
+        <!-- Weather Information -->
+        <section id="weather-info" hidden>
+
+            <h2 id="city-name">Dhaka</h2>
+
+            <div class="weather-icon" id="weather-icon">
+                🌤️
+            </div>
+
+            <h3 id="temperature">--°C</h3>
+
+            <p id="condition">Weather condition</p>
+
+            <div class="weather-details">
+
+                <div class="detail-card">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <h4 id="humidity">--%</h4>
+                </div>
+
+                <div class="detail-card">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <h4 id="wind">-- km/h</h4>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Weather App | Built with HTML, CSS & JavaScript</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
